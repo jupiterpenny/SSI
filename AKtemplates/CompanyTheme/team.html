@@ -1,0 +1,227 @@
+<html lang="en">
+
+
+
+<head>
+
+    <title>team</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./../bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+    <!-- <link href="../theme1/templates/css/styles.css" rel="stylesheet"> -->
+    <link href="./../animate.css-master/animate.css" rel="stylesheet">
+    <link href="./../magic-master/magic.css" rel="stylesheet">
+    <link href="./../bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./../bootstrap-3.3.7/dist/css/bootstrap-theme.css" rel="stylesheet">
+
+    <script src="./../textillate-master/assets/jquery.lettering.js" rel="stylesheet"></script>
+    <script src="./../textillate-master/jquery.textillate.js"></script>
+    <link href="./../textillate-master/assets/animate.css" rel="stylesheet">
+
+    <style>
+        .nocursor { cursor: none; }
+
+
+
+
+
+        /* Heading */
+        .heading {
+            z-index: 1;
+            position: relative;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .heading:after {
+            left: 50%;
+            height: 3px;
+            width: 50px;
+            content: " ";
+            bottom: -35px;
+            margin-left: -25px;
+            position: absolute;
+            background: #fefefe;
+        }
+
+        .heading h2 {
+            font-size: 70px;
+            font-weight: 500;
+            margin: 0 0 20px;
+            color: #fefefe;
+            text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+            0px -5px 35px rgba(255,255,255,0.3);
+        }
+
+        .heading p {
+            font-size: 50px;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        /* Team Members */
+        .team-members {
+            width: 100%;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .team-members .team-avatar {
+            position: relative;
+        }
+
+        .team-members .team-avatar:after {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: " ";
+            position: absolute;
+            background: rgba(129, 129, 129, 0.1);
+            transition-duration: 300ms;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+        }
+
+        .team-members .team-avatar img {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .team-members .team-desc {
+            left: auto;
+            bottom: 0;
+            width: 100%;
+            padding: 0 20px;
+            position: absolute;
+            opacity: 0;
+            color: #fff;
+            -webkit-transform: translate3d(0, 10%, 0);
+            transform: translate3d(0, 10%, 0);
+            -webkit-transition: opacity 0.3s;
+            -moz-transition: opacity 0.3s;
+            -ms-transition: opacity 0.3s;
+            -o-transition: opacity 0.3s;
+            transition: opacity 0.3s;
+        }
+
+        .team-members .team-desc h4 {
+            font-size: 60px;
+            font-weight: 600;
+            margin: 0 0 10px;
+            color: #fff;
+        }
+
+        .team-members .team-desc span {
+            display: block;
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+
+
+        .team-members .team-desc {
+            -webkit-transform: translate3d(0, -5%, 0);
+            transform: translate3d(0, -5%, 0);
+            -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+        }
+
+        .team-members .team-desc {
+            opacity: 1;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+
+        #animation1{
+            animation-delay: 2s;
+        }
+
+        #animation2{
+            animation-delay: 3s;
+        }
+
+        #animation3{
+            animation-delay: 4s;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body style="background-color:#282828;" class="nocursor animated pulse">
+
+
+
+    <div class="heading" style="padding-top: 150px;">
+        <h2 style="font-family:cursive;">Our <strong>Team</strong></h2>
+        <p class="tlt">slogan/subtitle</p>
+
+        <script>
+            $('.tlt').textillate({
+                loop: true,
+                in: { effect: 'flash' },
+                out: { effect: 'fadeOut' }
+            });
+        </script>
+    </div><!-- //end heading -->
+
+    <div class="row" style="padding-left: 50px; padding-right: 50px;">
+        <div class="col-lg-4">
+            <div class="team-members">
+                <div class="team-avatar">
+                    <img class="img-responsive" src="family.jpg" alt="">
+                </div>
+                <div id="animation1"class="team-desc animated slideInUp">
+                    <h4>name</h4>
+                    <span>job</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="team-members">
+                <div class="team-avatar">
+                    <img class="img-responsive" src="family.jpg" alt="">
+                </div>
+                <div id="animation2" class="team-desc animated slideInUp">
+                    <h4>name</h4>
+                    <span>job</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="team-members">
+                <div class="team-avatar">
+                    <img class="img-responsive" src="family.jpg" alt="">
+                </div>
+                <div id="animation3"class="team-desc animated slideInUp">
+                    <h4>name</h4>
+                    <span>job</span>
+                </div>
+            </div>
+        </div>
+    </div><!-- //end row -->
+
+
+</body>
+</html>

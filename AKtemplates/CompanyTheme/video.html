@@ -1,0 +1,194 @@
+<html lang="en">
+
+
+
+<head>
+
+    <title>video</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./../bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+
+    <script src="functions.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?AIzaSyCseZ2jIgrErQolhU6-7FwCKnINDrM3KvE" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+    <!-- <link href="../theme1/templates/css/styles.css" rel="stylesheet"> -->
+    <link href="./../animate.css-master/animate.css" rel="stylesheet">
+    <link href="./../magic-master/magic.css" rel="stylesheet">
+    <link href="./../bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./../bootstrap-3.3.7/dist/css/bootstrap-theme.css" rel="stylesheet">
+
+    <style>
+        .nocursor { cursor: none; }
+
+
+        body{
+
+            /*background: lightskyblue; /* For browsers that do not support gradients */
+            /* background: -webkit-linear-gradient(left top, white, lightskyblue); /* For Safari 5.1 to 6.0 */
+            /*  background: -o-linear-gradient(bottom right, white, lightskyblue); /* For Opera 11.1 to 12.0 */
+            /*  background: -moz-linear-gradient(bottom right, white, lightskyblue); /* For Firefox 3.6 to 15 */
+            /*  background: linear-gradient(to bottom right, white, lightskyblue); /* Standard syntax */
+            /*  padding: 0;
+             margin: 0; */
+
+            background-color:#282828;
+            background-size:cover;
+
+        }
+
+
+
+        .hero{
+            background-image: url("family.jpg");
+            background-repeat: no-repeat;
+            background-position: center !important;
+            background-size: cover;
+        }
+
+
+
+
+
+   .backgrounds{
+       border: solid 1px #555;
+       background-color: #282828;
+       box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+       -moz-box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+       -webkit-box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+       -o-box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+
+   }
+
+
+        .wrapper{
+            width: 100%;
+            background-size:cover;
+
+        }
+
+        #temperature{
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+            padding-top: 6%;
+        }
+
+        #ct{
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        @media screen and (max-width:600px) {
+
+
+            #ct {
+                font-size: 20px;
+            }
+
+            #temperature {
+                font-size: 20px;
+            }
+
+            iframe{
+                height: auto;
+            }
+        }
+
+        .overlay {
+            width: 100%;
+            background-color:#282828;
+            animation-delay: 1s;
+            padding: 0;
+            margin: 0;
+            background-size: cover;
+            opacity: 1;
+            z-index: 1000;
+        }
+
+        @media screen and (max-width:1400px) {
+
+
+            #ct {
+                font-size: 20px;
+            }
+
+            #temperature {
+                font-size: 20px;
+            }
+
+            iframe{
+                height: 300px;
+            }
+        }
+
+        .overlay {
+            width: 100%;
+            background-color:#282828;
+            animation-delay: 1s;
+            padding: 0;
+            margin: 0;
+            background-size: cover;
+            opacity: 1;
+            z-index: 1000;
+        }
+
+    </style>
+
+</head>
+
+<body style="background-color:#282828;" class="nocursor" onload="initialize(); display_ct();" >
+
+
+
+
+<div class="wrapper animated slideInDown">
+    <div class="row" style="background-color: #282828; height: 150px; opacity: 1; text-align:center;">
+        <div class="col-sm-3" style="float: left; padding-left: 5%;">
+            <div id="temperature"></div>
+        </div>
+        <div class="col-sm-3" style="float: right; padding-right: 5%;">
+            <span id='ct' ></span>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<div style="text-align:center">
+    <div class="hero">
+<div class="contain" style="padding-top: 3%; padding-left: 25%; padding-right: 25%; padding-bottom: 3%;">
+<div class="backgrounds animated zoomIn" style="padding-top: 5%; padding-left: 5%; padding-right: 5%; padding-bottom: 5%;">
+        <section id="pageVideo">
+            <iframe width="100%" height="800px;" src="https://www.youtube.com/embed/qIbbJV-grHg?autoplay=1&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+</div>
+</div>
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+<div class="overlay" style="text-align:center;background-color: #282828">
+</div>
+
+</body>
+
+</html>
